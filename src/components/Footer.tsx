@@ -3,7 +3,7 @@ import {FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaYoutube, FaPinterest, 
 export function Footer() {
     return (
         <section className='bg-gray-950 text-sky-100 px-3 rounded-2xl'>
-            <div className='flex flex-col sm:flex-row space-y-5 sm:space-y-0 justify-between text-center'>
+            <div className='flex flex-col sm:flex-row space-y-5 sm:space-y-0 justify-between sm:justify-around sm:mb-3 text-center'>
                 <div className='flex flex-col items-center'>
                     <h1 className='text-3xl font-bold text-yellow-300 font-serif px-4 py-2 rounded'>Offices of the
                         company</h1>
