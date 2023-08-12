@@ -15,7 +15,7 @@ export function Services() {
             <h1 className='text-5xl font-bold text-center pb-10'>
                 Our Services
             </h1>
-            <div className='flex flex-wrap justify-around space-y-3'>
+            <div className='flex flex-row flex-wrap justify-around space-y-4'>
                 {services.map((service) => (
                     <ServiceLink icon={service.icon} name={service.title}/>
                 ))}
