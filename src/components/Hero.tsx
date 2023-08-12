@@ -17,7 +17,7 @@ export function Hero() {
                 initial={{y: 20, opacity: 0}}
                 animate={{y: 0, opacity: 1}}
                 transition={{delay: 0.5, duration: 0.5}}
-                className='text-5xl sm:text-7xl text-center sm:text-left font-serif text-red-700 font-semibold sm:font-bold'>
+                className='text-5xl sm:text-7xl text-center sm:text-left font-tiltprism-400 text-red-700 font-semibold sm:font-bold'>
                 Global construction <br/> and Engineering
             </motion.p>
             <motion.p

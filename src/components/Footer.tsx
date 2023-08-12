@@ -3,9 +3,10 @@ import {FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaYoutube, FaPinterest, 
 export function Footer() {
     return (
         <section className='bg-gray-950 text-sky-100 px-3 rounded-2xl'>
-            <div className='flex flex-col sm:flex-row space-y-5 sm:space-y-0 justify-between sm:justify-around sm:mb-3 text-center'>
+            <div
+                className='flex flex-col sm:flex-row space-y-5 sm:space-y-0 justify-between sm:justify-around sm:mb-3 text-center'>
                 <div className='flex flex-col items-center'>
-                    <h1 className='text-3xl font-bold text-yellow-300 font-serif px-4 py-2 rounded'>Offices of the
+                    <h1 className='text-3xl font-bold text-yellow-300 font-merriweather-900 px-4 py-2 rounded'>Offices of the
                         company</h1>
                     <div className='flex flex-col sm:flex-row space-y-5 sm:space-y-0 sm:space-x-10'>
                         <div>
@@ -30,35 +31,75 @@ export function Footer() {
                 </div>
 
                 <div>
-                    <h1 className='text-3xl font-bold text-yellow-300 font-serif px-4 py-2 rounded'>Security
+                    <h1 className='text-3xl font-bold text-yellow-300 font-merriweather-900 px-4 py-2 rounded'>Security
                         services</h1>
                     <ul className=''>
-                        <li className='hover:text-blue-500 transition-colors duration-150'><a href='#fire-safety'>FIRE SAFETY</a></li>
-                        <li className='hover:text-blue-500 transition-colors duration-150'><a href='#electrical-safety'>ELECTRICAL SAFETY</a></li>
-                        <li className='hover:text-blue-500 transition-colors duration-150'><a href='#detailed-engineering'>Detailed Engineering</a></li>
-                        <li className='hover:text-blue-500 transition-colors duration-150'><a href='#assessment'>Assessment</a></li>
-                        <li className='hover:text-blue-500 transition-colors duration-150'><a href='#energy-efficiency-audit'>ENERGY EFFICIENCY AUDIT</a></li>
-                        <li className='hover:text-blue-500 transition-colors duration-150'><a href='#architectural-support'>ARCHITECTURAL SUPPORT</a></li>
-                        <li className='hover:text-blue-500 transition-colors duration-150'><a href='#testing-and-training'>TESTING & TRAINING</a></li>
-                        <li className='hover:text-blue-500 transition-colors duration-150'><a href='#environment'>ENVIRONMENT & SOCIAL IMPACT</a></li>
-                        <li className='hover:text-blue-500 transition-colors duration-150'><a href='#green-building'>GREEN BUILDING</a></li>
-                        <li className='hover:text-blue-500 transition-colors duration-150'><a href='#cap-management'>CAP MANAGEMENT</a></li>
-                        <li className='hover:text-blue-500 transition-colors duration-150'><a href='#material-testing'>Material Testing</a></li>
+                        <li className='hover:text-blue-500 transition-colors duration-150'>
+                            <a href='#fire-safety'>Fire Safety</a>
+                        </li>
+                        <li className='hover:text-blue-500 transition-colors duration-150'>
+                            <a href='#electrical-safety'>Electrical Safety</a>
+                        </li>
+                        <li className='hover:text-blue-500 transition-colors duration-150'>
+                            <a href='#detailed-engineering'>Detailed Engineering</a>
+                        </li>
+                        <li className='hover:text-blue-500 transition-colors duration-150'>
+                            <a href='#assessment'>Assessment</a>
+                        </li>
+                        <li className='hover:text-blue-500 transition-colors duration-150'>
+                            <a href='#energy-efficiency-audit'>Energy Efficiency Audit</a>
+                        </li>
+                        <li className='hover:text-blue-500 transition-colors duration-150'>
+                            <a href='#architectural-support'>Architectural Support</a>
+                        </li>
+                        <li className='hover:text-blue-500 transition-colors duration-150'>
+                            <a href='#testing-and-training'>Testing & Training</a>
+                        </li>
+                        <li className='hover:text-blue-500 transition-colors duration-150'>
+                            <a href='#environment'>Environment & Social Impact</a>
+                        </li>
+                        <li className='hover:text-blue-500 transition-colors duration-150'>
+                            <a href='#green-building'>Green Building</a>
+                        </li>
+                        <li className='hover:text-blue-500 transition-colors duration-150'>
+                            <a href='#cap-management'>CAP Management</a>
+                        </li>
+                        <li className='hover:text-blue-500 transition-colors duration-150'>
+                            <a href='#material-testing'>Material Testing</a>
+                        </li>
                     </ul>
                 </div>
 
                 <div>
-                    <h1 className='text-3xl font-bold text-yellow-300 font-serif px-4 py-2 rounded'>Others</h1>
+                    <h1 className='text-3xl font-bold text-yellow-300 font-merriweather-900 px-4 py-2 rounded'>Others</h1>
                     <ul>
-                        <li className='hover:text-blue-500 transition-colors duration-150'><a href='#cookies'>Cookies</a></li>
-                        <li className='hover:text-blue-500 transition-colors duration-150'><a href='#contact-us'>Contact us</a></li>
-                        <li className='hover:text-blue-500 transition-colors duration-150'><a href='#help-and-support'>Help & support</a></li>
-                        <li className='hover:text-blue-500 transition-colors duration-150'><a href='#about-us'>About us</a></li>
-                        <li className='hover:text-blue-500 transition-colors duration-150'><a href='#code-of-conduct'>Code of conduct</a></li>
-                        <li className='hover:text-blue-500 transition-colors duration-150'><a href='#privacy-policy'>Privacy policy</a></li>
-                        <li className='hover:text-blue-500 transition-colors duration-150'><a href='#return-policy'>Return policy</a></li>
-                        <li className='hover:text-blue-500 transition-colors duration-150'><a href='#global-locations'>Global locations</a></li>
-                        <li className='hover:text-blue-500 transition-colors duration-150'><a href='#global-suppliers'>Global suppliers</a></li>
+                        <li className='hover:text-blue-500 transition-colors duration-150'>
+                            <a href='#cookies'>Cookies</a>
+                        </li>
+                        <li className='hover:text-blue-500 transition-colors duration-150'>
+                            <a href='#contact-us'>Contact us</a>
+                        </li>
+                        <li className='hover:text-blue-500 transition-colors duration-150'>
+                            <a href='#help-and-support'>Help & support</a>
+                        </li>
+                        <li className='hover:text-blue-500 transition-colors duration-150'>
+                            <a href='#code-of-conduct'>Code of conduct</a>
+                        </li>
+                        <li className='hover:text-blue-500 transition-colors duration-150'>
+                            <a href='#privacy-policy'>Privacy policy</a>
+                        </li>
+                        <li className='hover:text-blue-500 transition-colors duration-150'>
+                            <a href='#return-policy'>Return policy</a>
+                        </li>
+                        <li className='hover:text-blue-500 transition-colors duration-150'>
+                            <a href='#global-locations'>Global locations</a>
+                        </li>
+                        <li className='hover:text-blue-500 transition-colors duration-150'>
+                            <a href='#global-suppliers'>Global suppliers</a>
+                        </li>
+                        <li className='hover:text-blue-500 transition-colors duration-150'>
+                            <a href='#about-us'>About us</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -77,13 +118,27 @@ export function Footer() {
             </div>
 
             <ul id='#footer-social-links' className='flex flex-row justify-center items-center space-x-4 pt-2 pb-3'>
-                <li className='hover:scale-125 transition-all duration-150'><a href='#twitter'><FaTwitter className='sm:text-3xl'/></a></li>
-                <li className='hover:scale-125 transition-all duration-150'><a href='#facebook'><FaFacebook className='sm:text-3xl'/></a></li>
-                <li className='hover:scale-125 transition-all duration-150'><a href='#instagram'><FaInstagram className='sm:text-3xl'/></a></li>
-                <li className='hover:scale-125 transition-all duration-150'><a href='#linkedin'><FaLinkedin className='sm:text-3xl'/></a></li>
-                <li className='hover:scale-125 transition-all duration-150'><a href='#youtube'><FaYoutube className='sm:text-3xl'/></a></li>
-                <li className='hover:scale-125 transition-all duration-150'><a href='#pinterest'><FaPinterest className='sm:text-3xl'/></a></li>
-                <li className='hover:scale-125 transition-all duration-150'><a href='#reddit'><FaReddit className='sm:text-3xl'/></a></li>
+                <li className='hover:scale-125 transition-all duration-150'>
+                    <a href='#twitter'><FaTwitter className='sm:text-3xl'/></a>
+                </li>
+                <li className='hover:scale-125 transition-all duration-150'>
+                    <a href='#facebook'><FaFacebook className='sm:text-3xl'/></a>
+                </li>
+                <li className='hover:scale-125 transition-all duration-150'>
+                    <a href='#instagram'><FaInstagram className='sm:text-3xl'/></a>
+                </li>
+                <li className='hover:scale-125 transition-all duration-150'>
+                    <a href='#linkedin'><FaLinkedin className='sm:text-3xl'/></a>
+                </li>
+                <li className='hover:scale-125 transition-all duration-150'>
+                    <a href='#youtube'><FaYoutube className='sm:text-3xl'/></a>
+                </li>
+                <li className='hover:scale-125 transition-all duration-150'>
+                    <a href='#pinterest'><FaPinterest className='sm:text-3xl'/></a>
+                </li>
+                <li className='hover:scale-125 transition-all duration-150'>
+                    <a href='#reddit'><FaReddit className='sm:text-3xl'/></a>
+                </li>
             </ul>
         </section>
     )
