@@ -1,11 +1,13 @@
+import {FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaYoutube, FaPinterest, FaReddit} from 'react-icons/fa6'
+
 export function Footer() {
     return (
         <section className='bg-gray-950 text-sky-100 px-3 rounded-2xl'>
-            <div className='flex justify-between text-center'>
+            <div className='flex flex-col space-y-5 sm:flex-row justify-between text-center'>
                 <div className='flex flex-col items-center'>
                     <h1 className='text-3xl font-bold text-yellow-300 font-serif px-4 py-2 rounded'>Offices of the
                         company</h1>
-                    <div className='flex space-x-10'>
+                    <div className='flex flex-col space-y-5 sm:flex-row sm:space-x-10'>
                         <div>
                             <h3 className='text-xl font-semibold uppercase'>USA</h3>
                             <ul className='text-left'>
@@ -41,7 +43,8 @@ export function Footer() {
                     </ul>
                 </div>
                 <div>
-                    <h1 className='text-3xl font-bold text-yellow-300 font-serif px-4 py-2 rounded'>Security services</h1>
+                    <h1 className='text-3xl font-bold text-yellow-300 font-serif px-4 py-2 rounded'>Security
+                        services</h1>
                     <ul>
                         <li><a href='#fire-safety'>FIRE SAFETY</a></li>
                         <li><a href='#electrical-safety'>ELECTRICAL SAFETY</a></li>
@@ -58,7 +61,7 @@ export function Footer() {
                 </div>
             </div>
             {/*<div className='bg-blue-950 rounded min-h-[0.1rem] mt-1 mb-3'/>*/}
-            <div className='flex space-x-3 items-center justify-center'>
+            <div className='flex flex-col mt-5 sm:mt-0 sm:flex-row space-y-2 sm:space-x-3 items-center justify-center'>
                 <p className='text-xl font-semibold'>Be with us:</p>
                 <input type="email" placeholder='enter your email' className='text-input-1 text-lg text-black'/>
                 <button className='button-success text-black font-semibold'>Subscribe</button>
@@ -69,14 +72,14 @@ export function Footer() {
                     <li><img src='none' alt='amex'/></li>
                 </ul>
             </div>
-            <ul id='#footer-social-links' className='flex flex-row justify-center space-x-3 py-1'>
-                <li><a href='#twitter'>Twitter</a></li>
-                <li><a href='#facebook'>Facebook</a></li>
-                <li><a href='#instagram'>Instagram</a></li>
-                <li><a href='#linkedin'>Linkedin</a></li>
-                <li><a href='#youtube'>Youtube</a></li>
-                <li><a href='#pinterest'>Pinterest</a></li>
-                <li><a href='#reddit'>Reddit</a></li>
+            <ul id='#footer-social-links' className='flex flex-row justify-center items-center space-x-3 pt-2 pb-3'>
+                <li><a href='#twitter'><FaTwitter className='sm:text-3xl'/></a></li>
+                <li><a href='#facebook'><FaFacebook className='sm:text-3xl'/></a></li>
+                <li><a href='#instagram'><FaInstagram className='sm:text-3xl'/></a></li>
+                <li><a href='#linkedin'><FaLinkedin className='sm:text-3xl'/></a></li>
+                <li><a href='#youtube'><FaYoutube className='sm:text-3xl'/></a></li>
+                <li><a href='#pinterest'><FaPinterest className='sm:text-3xl'/></a></li>
+                <li><a href='#reddit'><FaReddit className='sm:text-3xl'/></a></li>
             </ul>
         </section>
     )
