@@ -6,7 +6,8 @@ export function Footer() {
             <div
                 className='flex flex-col sm:flex-row space-y-5 sm:space-y-0 justify-between sm:justify-around sm:mb-3 text-center'>
                 <div className='flex flex-col items-center'>
-                    <h1 className='text-3xl font-bold text-yellow-300 font-merriweather-900 px-4 py-2 rounded'>Offices of the
+                    <h1 className='text-3xl font-bold text-yellow-300 font-merriweather-900 px-4 py-2 rounded'>Offices
+                        of the
                         company</h1>
                     <div className='flex flex-col sm:flex-row space-y-5 sm:space-y-0 sm:space-x-10'>
                         <div>
@@ -105,9 +106,9 @@ export function Footer() {
             </div>
 
             <div className='flex flex-col mt-5 sm:mt-0 sm:flex-row space-y-2 sm:space-x-3 items-center justify-center'>
-                <p className='text-xl font-semibold'>Be with us:</p>
+                <p className='text-xl font-semibold font-mono'>Stay connected:</p>
                 <input type="email" placeholder='enter your email' className='text-input-1 text-lg text-black'/>
-                <button className='button-success text-black font-semibold'>Subscribe</button>
+                <button className='btn btn-primary'>Subscribe</button>
             </div>
 
             <div id='#payments' className='flex space-x-2 py-1'>
@@ -118,27 +119,41 @@ export function Footer() {
             </div>
 
             <ul id='#footer-social-links' className='flex flex-row justify-center items-center space-x-4 pt-2 pb-3'>
-                <li className='hover:scale-125 transition-all duration-150'>
-                    <a href='#twitter'><FaTwitter className='text-sky-300 sm:text-3xl'/></a>
-                </li>
-                <li className='hover:scale-125 transition-all duration-150'>
-                    <a href='#facebook'><FaFacebook className='text-blue-500 sm:text-3xl'/></a>
-                </li>
-                <li className='hover:scale-125 transition-all duration-150'>
-                    <a href='#instagram'><FaInstagram className='text-rose-500 sm:text-3xl'/></a>
-                </li>
-                <li className='hover:scale-125 transition-all duration-150'>
-                    <a href='#linkedin'><FaLinkedin className='text-blue-700 sm:text-3xl'/></a>
-                </li>
-                <li className='hover:scale-125 transition-all duration-150'>
-                    <a href='#youtube'><FaYoutube className='text-red-600 sm:text-3xl'/></a>
-                </li>
-                <li className='hover:scale-125 transition-all duration-150'>
-                    <a href='#pinterest'><FaPinterest className='text-rose-800 sm:text-3xl'/></a>
-                </li>
-                <li className='hover:scale-125 transition-all duration-150'>
-                    <a href='#reddit'><FaReddit className='text-orange-500 sm:text-3xl'/></a>
-                </li>
+                <span className='tooltip tooltip-left' data-tooltip='twitter'>
+                    <li className='hover:scale-125 transition-all duration-150'>
+                        <a href='#twitter'><FaTwitter className='text-sky-300 sm:text-3xl'/></a>
+                    </li>
+                </span>
+                <span className='tooltip tooltip-top' data-tooltip='facebook'>
+                    <li className='hover:scale-125 transition-all duration-150'>
+                        <a href='#facebook'><FaFacebook className='text-blue-500 sm:text-3xl'/></a>
+                    </li>
+                </span>
+                <span className='tooltip tooltip-top' data-tooltip='instagram'>
+                    <li className='hover:scale-125 transition-all duration-150'>
+                        <a href='#instagram'><FaInstagram className='text-rose-500 sm:text-3xl'/></a>
+                    </li>
+                </span>
+                <span className='tooltip tooltip-top' data-tooltip='linkedin'>
+                    <li className='hover:scale-125 transition-all duration-150'>
+                        <a href='#linkedin'><FaLinkedin className='text-blue-700 sm:text-3xl'/></a>
+                    </li>
+                </span>
+                <span className='tooltip tooltip-top' data-tooltip='youtube'>
+                    <li className='hover:scale-125 transition-all duration-150'>
+                        <a href='#youtube'><FaYoutube className='text-red-600 sm:text-3xl'/></a>
+                    </li>
+                </span>
+                <span className='tooltip tooltip-top' data-tooltip='pinterest'>
+                    <li className='hover:scale-125 transition-all duration-150'>
+                        <a href='#pinterest'><FaPinterest className='text-rose-800 sm:text-3xl'/></a>
+                    </li>
+                </span>
+                <span className='tooltip tooltip-right' data-tooltip='reddit'>
+                    <li className='hover:scale-125 transition-all duration-150'>
+                        <a href='#reddit'><FaReddit className='text-orange-500 sm:text-3xl'/></a>
+                    </li>
+                </span>
             </ul>
         </section>
     )

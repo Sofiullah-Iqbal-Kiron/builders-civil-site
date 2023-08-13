@@ -9,7 +9,7 @@ import {WhyChooseUs} from "./components/WhyChooseUs";
 
 function App() {
     return (
-        <div className='bg-gradient-to-r from-sky-100 to-sky-200 flex flex-col space-y-20'>
+        <div className='bg-gradient-to-r from-sky-100 to-sky-200 text-black flex flex-col space-y-20'>
             <Hero/>
             <Services/>
             <WhyChooseUs/>

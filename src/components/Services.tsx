@@ -3,12 +3,12 @@ import {FaHouse, FaPeopleRoof, FaMosque, FaBuilding, FaBridge, FaRoad} from 'rea
 
 export function Services() {
     const services = [
-        {icon: <FaHouse/>, title: 'House Design'},
-        {icon: <FaPeopleRoof/>, title: 'Office Design'},
-        {icon: <FaBuilding/>, title: 'Market Design'},
-        {icon: <FaMosque/>, title: 'Mosque Design'},
-        {icon: <FaRoad/>, title: 'Road Design'},
-        {icon: <FaBridge/>, title: 'Bridge Design'},
+        {icon: <FaHouse className='text-green-600'/>, title: 'House Design'},
+        {icon: <FaPeopleRoof className='text-blue-600'/>, title: 'Office Design'},
+        {icon: <FaBuilding className='text-pink-500'/>, title: 'Market Design'},
+        {icon: <FaMosque className='text-lime-800'/>, title: 'Mosque Design'},
+        {icon: <FaRoad className='text-gray-800'/>, title: 'Road Design'},
+        {icon: <FaBridge className='text-violet-600'/>, title: 'Bridge Design'},
     ];
 
     return (
