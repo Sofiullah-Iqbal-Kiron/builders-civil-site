@@ -3,7 +3,7 @@ import {motion} from 'framer-motion';
 export function Hero() {
     return (
         <section id="#hero"
-                 className="bg-[url('assets/img-3.jpg')] bg-cover bg-blend-normal sm:min-h-screen sm:ps-10 flex flex-col justify-center items-center sm:items-start space-y-10">
+                 className="bg-[url('assets/img-3.jpg')] bg-cover bg-blend-normal min-h-screen sm:ps-10 flex flex-col justify-center items-center sm:items-start space-y-10">
             <motion.p
                 initial={{opacity: 0}}
                 animate={{opacity: 1}}
@@ -34,7 +34,7 @@ export function Hero() {
                 initial={{x: -100, opacity: 0}}
                 animate={{x: 0, opacity: 1}}
                 transition={{delay: 1.5, duration: 0.4}}
-                className='pb-2'
+                className='sm:pb-2'
             >
                 <a
                     type="button"
