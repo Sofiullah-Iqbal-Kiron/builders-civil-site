@@ -8,9 +8,8 @@ export function Hero() {
                 initial={{opacity: 0}}
                 animate={{opacity: 1}}
                 transition={{duration: 0.5}}
-                className='bg-sky-700 text-white shadow-md shadow-blue-500/40 self-center text-center sm:text-left sm:self-start sm:w-1/2 p-5 mt-5'>
-                <span>Welcome!</span><br/>
-                <span className='text-2xl sm:text-4xl'>Builder Construction</span><br/>
+                className='bg-yellow-500/50 backdrop-blur-2xl text-white shadow-md shadow-white-500/40 self-center text-center sm:text-left sm:self-start sm:w-1/2 p-5 mt-5'>
+                <span className='text-3xl sm:text-4xl font-semibold'>Welcome!</span><br/>
                 <span className='text-md sm:text-lg text-black font-semibold tracking-wider'>We are here to build your dream home.</span><br/>
             </motion.p>
             <motion.p
