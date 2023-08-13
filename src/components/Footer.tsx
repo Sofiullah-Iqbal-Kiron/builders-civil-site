@@ -1,4 +1,32 @@
+import {motion} from 'framer-motion';
+
 import {FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaYoutube, FaPinterest, FaReddit} from 'react-icons/fa6'
+
+import usaflag from '../assets/footer/USA flag.svg';
+import ukflag from '../assets/footer/UK flag.svg';
+
+import amex from '../assets/footer/amex.svg';
+import apple_pay from '../assets/footer/apple-pay.svg';
+import google_pay from '../assets/footer/google-pay.svg';
+import master_card from '../assets/footer/master-card.svg';
+import payoneer from '../assets/footer/payoneer.svg';
+import paypal from '../assets/footer/paypal.svg';
+import visa_card from '../assets/footer/visa-card.svg';
+
+const payment_methods = [
+    {logo: amex, tooltip: 'amex'},
+    {logo: apple_pay, tooltip: 'apple pay'},
+    {logo: google_pay, tooltip: 'google pay'},
+    {logo: master_card, tooltip: 'master card'},
+    {logo: paypal, tooltip: 'paypal'},
+    {logo: payoneer, tooltip: 'payoneer'},
+    {logo: visa_card, tooltip: 'visa card'},
+]
+
+const screen_width = screen.width;
+const sm_screen = screen_width < 640;
+const md_screen = screen_width >= 640 && screen_width <= 768;
+const lg_screen = screen_width > 768;
 
 export function Footer() {
     return (
@@ -11,7 +39,10 @@ export function Footer() {
                         company</h1>
                     <div className='flex flex-col sm:flex-row space-y-5 sm:space-y-0 sm:space-x-10'>
                         <div>
-                            <h3 className='text-xl font-semibold uppercase'>USA</h3>
+                            <div className='flex space-x-3 justify-center'>
+                                <img src={usaflag} alt='USA flag' width={25}/>
+                                <h3 className='text-xl font-semibold uppercase'>USA</h3>
+                            </div>
                             <ul className='text-left'>
                                 <li>New York, NY 10012</li>
                                 <li>info@example.com</li>
@@ -20,7 +51,10 @@ export function Footer() {
                             </ul>
                         </div>
                         <div>
-                            <h3 className='text-xl font-semibold uppercase'>UK</h3>
+                            <div className='flex space-x-3 justify-center'>
+                                <img src={ukflag} alt='UK flag' width={25}/>
+                                <h3 className='text-xl font-semibold uppercase'>UK</h3>
+                            </div>
                             <ul className='text-right'>
                                 <li>New York, NY 10012</li>
                                 <li>info@example.com</li>
@@ -106,19 +140,20 @@ export function Footer() {
             </div>
 
             <div className='flex flex-col mt-5 sm:mt-0 sm:flex-row space-y-2 sm:space-x-3 items-center justify-center'>
-                <p className='text-xl font-semibold font-mono'>Stay connected:</p>
+                <p className='text-xl font-semibold font-mono'>Stay updated:</p>
                 <input type="email" placeholder='enter your email' className='text-input-1 text-lg text-black'/>
                 <button className='btn btn-primary'>Subscribe</button>
             </div>
 
-            <div id='#payments' className='flex space-x-2 py-1'>
-                <h2>We accepts: </h2>
-                <ul>
-                    <li><img src='none' alt='amex'/></li>
-                </ul>
+            <div id='payment-methods' className='flex flex-wrap justify-center space-x-3 mt-4'>
+                {payment_methods.map((method, idx) =>
+                    <img key={idx} src={method.logo} alt={method.tooltip}
+                         width={sm_screen ? 35 : (md_screen ? 47 : 60)}/>
+                )}
             </div>
 
-            <ul id='#footer-social-links' className='flex flex-row justify-center items-center space-x-4 pt-2 pb-3'>
+            <ul id='#footer-social-links'
+                className='flex flex-row justify-center items-center space-x-4 pt-2 pb-3 mt-5'>
                 <span className='tooltip tooltip-left' data-tooltip='twitter'>
                     <li className='hover:scale-125 transition-all duration-150'>
                         <a href='#twitter'><FaTwitter className='text-sky-300 sm:text-3xl'/></a>

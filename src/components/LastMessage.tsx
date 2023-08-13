@@ -1,8 +1,13 @@
-import bg from '../assets/last_message_bg.png';
+import {motion} from 'framer-motion';
 
 export function LastMessage() {
     return (
-        <section className='flex flex-col space-y-10 items-center'>
+        <motion.section
+            initial={{opacity: 0}}
+            whileInView={{opacity: 1}}
+            transition={{delay: 0.1, duration: 0.5}}
+
+            className='flex flex-col space-y-10 items-center'>
             <p className='text-4xl sm:text-5xl text-center'>
                 You can make a different today!
             </p>
@@ -13,6 +18,6 @@ export function LastMessage() {
                 className='bg-green-500 font-semibold rounded px-4 py-3 hover:bg-green-800 hover:text-white hover:scale-105 transition-all duration-200'>
                 SIGN UP NOW
             </button>
-        </section>
+        </motion.section>
     )
 }

@@ -8,6 +8,7 @@ export function Hero() {
                 initial={{opacity: 0}}
                 animate={{opacity: 1}}
                 transition={{duration: 0.5}}
+
                 className='bg-yellow-500/50 backdrop-blur-2xl text-white shadow-md shadow-white-500/40 self-center text-center sm:text-left sm:self-start sm:w-1/2 p-5 mt-5'>
                 <span className='text-3xl sm:text-4xl font-semibold'>Welcome!</span><br/>
                 <span className='text-md sm:text-lg text-black font-semibold tracking-wider'>We are here to build your dream home.</span><br/>
@@ -16,6 +17,7 @@ export function Hero() {
                 initial={{y: 20, opacity: 0}}
                 animate={{y: 0, opacity: 1}}
                 transition={{delay: 0.5, duration: 0.5}}
+
                 className='bg-white/30 backdrop-blur-sm backdrop-opacity-50 p-5 rounded text-5xl sm:text-7xl text-center sm:text-left font-serif text-red-600 font-semibold sm:font-bold'>
                 Global construction <br/> and Engineering
             </motion.p>
@@ -23,6 +25,7 @@ export function Hero() {
                 initial={{y: 20, opacity: 0}}
                 animate={{y: 0, opacity: 1}}
                 transition={{delay: 1, duration: 0.5}}
+
                 className='text-center sm:text-left font-semibold'
             >
                 Experience and sustainability - these are the keys to success of Byron<br/>for the realisation of

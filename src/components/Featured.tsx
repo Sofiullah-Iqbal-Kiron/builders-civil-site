@@ -1,6 +1,6 @@
 import {motion} from 'framer-motion';
 
-export function FeaturedWorks() {
+export function Featured() {
     return (
         <motion.section
             initial={{opacity: 0}}
