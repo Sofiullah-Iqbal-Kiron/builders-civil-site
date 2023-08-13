@@ -119,25 +119,25 @@ export function Footer() {
 
             <ul id='#footer-social-links' className='flex flex-row justify-center items-center space-x-4 pt-2 pb-3'>
                 <li className='hover:scale-125 transition-all duration-150'>
-                    <a href='#twitter'><FaTwitter className='sm:text-3xl'/></a>
+                    <a href='#twitter'><FaTwitter className='text-sky-300 sm:text-3xl'/></a>
                 </li>
                 <li className='hover:scale-125 transition-all duration-150'>
-                    <a href='#facebook'><FaFacebook className='sm:text-3xl'/></a>
+                    <a href='#facebook'><FaFacebook className='text-blue-500 sm:text-3xl'/></a>
                 </li>
                 <li className='hover:scale-125 transition-all duration-150'>
-                    <a href='#instagram'><FaInstagram className='sm:text-3xl'/></a>
+                    <a href='#instagram'><FaInstagram className='text-rose-500 sm:text-3xl'/></a>
                 </li>
                 <li className='hover:scale-125 transition-all duration-150'>
-                    <a href='#linkedin'><FaLinkedin className='sm:text-3xl'/></a>
+                    <a href='#linkedin'><FaLinkedin className='text-blue-700 sm:text-3xl'/></a>
                 </li>
                 <li className='hover:scale-125 transition-all duration-150'>
-                    <a href='#youtube'><FaYoutube className='sm:text-3xl'/></a>
+                    <a href='#youtube'><FaYoutube className='text-red-600 sm:text-3xl'/></a>
                 </li>
                 <li className='hover:scale-125 transition-all duration-150'>
-                    <a href='#pinterest'><FaPinterest className='sm:text-3xl'/></a>
+                    <a href='#pinterest'><FaPinterest className='text-rose-800 sm:text-3xl'/></a>
                 </li>
                 <li className='hover:scale-125 transition-all duration-150'>
-                    <a href='#reddit'><FaReddit className='sm:text-3xl'/></a>
+                    <a href='#reddit'><FaReddit className='text-orange-500 sm:text-3xl'/></a>
                 </li>
             </ul>
         </section>
