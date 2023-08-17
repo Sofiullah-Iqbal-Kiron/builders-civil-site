@@ -2,17 +2,16 @@ import {FaCheck} from 'react-icons/fa6';
 
 interface FeaturedDesignCardProps {
     title: string,
-    image_path: string,
+    image: string,
     price: number,
     features: Array<string>,
     page_link: string,
 }
 
-export function FeaturedDesignCard({title, image_path, price, features, page_link}: FeaturedDesignCardProps) {
-    console.log(image_path);
+export function FeaturedDesignCard({title, image, price, features, page_link}: FeaturedDesignCardProps) {
     return (
         <div
-            style={{backgroundImage: `url(${image_path})`}}
+            style={{backgroundImage: `url(${image})`}}
             className={`bg-cover w-[13rem] sm:w-[15rem] h-[24rem] sm:h-[25rem] rounded-md`}>
             <div className='h-3/5'/>
             <div className='h-2/5 bg-white/50 backdrop-blur-sm backdrop-saturate-150 backdrop-brightness-125 px-1.5 py-0.5 flex flex-col space-y-1'>
@@ -24,7 +23,7 @@ export function FeaturedDesignCard({title, image_path, price, features, page_lin
                         {price + '$'}
                     </p>
                 </div>
-                <ul className=''>
+                <ul>
                     {features.map((feature, idx) =>
                         <li key={idx} className='flex items-center space-x-2'><FaCheck/> <p>{feature}</p></li>)}
                 </ul>

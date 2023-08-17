@@ -28,8 +28,8 @@ export function Services() {
                 Our Services
             </h1>
             <div className='flex flex-wrap justify-evenly gap-2'>
-                {services.map((service) => (
-                    <ServiceLink icon={service.icon} name={service.title}/>
+                {services.map((service, idx) => (
+                    <ServiceLink key={idx} icon={service.icon} name={service.title}/>
                 ))}
             </div>
         </motion.section>

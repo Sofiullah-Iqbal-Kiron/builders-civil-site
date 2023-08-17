@@ -7,12 +7,14 @@ import {Footer} from "./components/Footer";
 import {LastMessage} from "./components/LastMessage";
 import {WhyChooseUs} from "./components/WhyChooseUs";
 import {FeaturedDesigns} from "./components/FeaturedDesigns";
+import {FeaturedWorks} from "./components/FeaturedWorks";
 
 function App() {
     return (
         <div className='bg-gradient-to-r from-sky-100 to-sky-200 text-black flex flex-col space-y-20'>
             <Hero/>
             <Services/>
+            <FeaturedWorks/>
             <FeaturedDesigns/>
             <WhyChooseUs/>
             <LastMessage/>
