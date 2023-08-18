@@ -1,4 +1,5 @@
 import {TechnologyCard} from "./TechnologyCard";
+import {SectionTitle} from "../common/SectionTitle";
 
 interface Props {
     title: string,
@@ -8,9 +9,7 @@ interface Props {
 export function Technology({title, technologies}: Props) {
     return (
         <>
-            <h1 className='text-3xl sm:text-5xl text-center font-semibold py-4 sm:py-5'>
-                {title}
-            </h1>
+            <SectionTitle text={title}/>
             <div className='flex flex-wrap justify-center gap-3 sm:gap-5'>
                 {
                     technologies.map((technology, idx) =>
