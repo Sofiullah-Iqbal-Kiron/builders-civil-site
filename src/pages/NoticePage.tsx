@@ -68,8 +68,9 @@ export function NoticePage() {
     const reversedNoticeData=[...noticeData].reverse();
 
     return (
-        <>
+        <section className='pt-[3.5rem]'>
             <SectionTitle text='Notice Board'/>
+
             <div className='flex justify-center w-full overflow-x-auto'>
                 <table className='text-center w-full'>
                     <thead>
@@ -96,6 +97,6 @@ export function NoticePage() {
             </div>
             <div className='py-10'/>
             <Footer/>
-        </>
+        </section>
     )
 }

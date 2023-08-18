@@ -1,6 +1,5 @@
 import {CivilPage} from "./pages/CivilPage";
 
-import {BlankSpace} from "./components/common/BlankSpace";
 import {Navbar} from "./components/common/Navbar";
 import {TechnologyPage} from "./pages/TechnologyPage";
 import {CompanyPage} from "./pages/CompanyPage";
@@ -13,7 +12,6 @@ import {Routes, Route} from "react-router-dom";
 function App() {
     return (
         <div className='bg-gradient-to-r from-sky-100 to-sky-200 text-black'>
-            <BlankSpace/>
             <Navbar/>
 
             <Routes>
