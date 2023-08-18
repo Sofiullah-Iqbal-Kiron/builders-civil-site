@@ -1,24 +1,31 @@
-import {useState} from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import {Hero} from "./components/Hero";
-import {Services} from "./components/Services";
-import {Footer} from "./components/Footer";
-import {LastMessage} from "./components/LastMessage";
-import {WhyChooseUs} from "./components/WhyChooseUs";
-import {FeaturedDesigns} from "./components/FeaturedDesigns";
-import {FeaturedWorks} from "./components/FeaturedWorks";
+import {CivilPage} from "./pages/CivilPage";
+
+import {BlankSpace} from "./components/common/BlankSpace";
+import {Navbar} from "./components/common/Navbar";
+import {TechnologyPage} from "./pages/TechnologyPage";
+import {CompanyPage} from "./pages/CompanyPage";
+import {SecurityPage} from "./pages/SecurityPage";
+import {NoticePage} from "./pages/NoticePage";
+import {ContactUsPage} from "./pages/ContactUsPage";
+import {LoginPage} from "./pages/LoginPage";
+import {Routes, Route} from "react-router-dom";
 
 function App() {
     return (
-        <div className='bg-gradient-to-r from-sky-100 to-sky-200 text-black flex flex-col space-y-20'>
-            <Hero/>
-            <Services/>
-            <FeaturedWorks/>
-            <FeaturedDesigns/>
-            <WhyChooseUs/>
-            <LastMessage/>
-            <Footer/>
+        <div className='bg-gradient-to-r from-sky-100 to-sky-200 text-black'>
+            <BlankSpace/>
+            <Navbar/>
+
+            <Routes>
+                <Route path='/' element={<CivilPage/>}/>
+                <Route path='civil' element={<CivilPage/>}/>
+                <Route path='technology' element={<TechnologyPage/>}/>
+                <Route path='company' element={<CompanyPage/>}/>
+                <Route path='security' element={<SecurityPage/>}/>
+                <Route path='notice' element={<NoticePage/>}/>
+                <Route path='contact-us' element={<ContactUsPage/>}/>
+                <Route path='login' element={<LoginPage/>}/>
+            </Routes>
         </div>
     )
 }
