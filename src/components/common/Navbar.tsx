@@ -10,7 +10,7 @@ const nav_items = [
         link: 'civil',
     },
     {
-        text: 'Technology',
+        text: 'Architecture',
         icon: <FaLaptop/>,
         link: 'technology',
     },
@@ -61,7 +61,7 @@ export function Navbar() {
                     nav_items.map((m, idx) =>
                         <Link key={idx}
                            to={m.link}
-                           className='flex flex-col items-center hover:text-violet-800 transition-colors duration-300'>
+                           className='flex flex-col items-center hover:text-blue-500 transition-colors duration-150'>
                             {m.icon}
                             <p>
                                 {m.text}

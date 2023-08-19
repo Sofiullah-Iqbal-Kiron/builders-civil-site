@@ -1,7 +1,7 @@
 import {CivilPage} from "./pages/CivilPage";
 
 import {Navbar} from "./components/common/Navbar";
-import {TechnologyPage} from "./pages/TechnologyPage";
+import {ArchitecturePage} from "./pages/ArchitecturePage";
 import {CompanyPage} from "./pages/CompanyPage";
 import {SecurityPage} from "./pages/SecurityPage";
 import {NoticePage} from "./pages/NoticePage";
@@ -17,7 +17,7 @@ function App() {
             <Routes>
                 <Route path='/' element={<CivilPage/>}/>
                 <Route path='civil' element={<CivilPage/>}/>
-                <Route path='technology' element={<TechnologyPage/>}/>
+                <Route path='technology' element={<ArchitecturePage/>}/>
                 <Route path='company' element={<CompanyPage/>}/>
                 <Route path='security' element={<SecurityPage/>}/>
                 <Route path='notice' element={<NoticePage/>}/>

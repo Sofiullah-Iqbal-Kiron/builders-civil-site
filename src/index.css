@@ -23,3 +23,7 @@
         @apply py-3 px-5 block bg-green-50 border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500;
     }
 }
+
+tr:nth-child(even){
+    background-color: aliceblue;
+}

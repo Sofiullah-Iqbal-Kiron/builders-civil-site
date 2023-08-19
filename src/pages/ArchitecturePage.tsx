@@ -390,7 +390,7 @@ const Cybersecurity = [
     },
 ];
 
-export function TechnologyPage() {
+export function ArchitecturePage() {
     return (
         <div className='flex flex-col space-y-10 pt-[3.5rem]'>
             <Technology title={'Design Technologies'} technologies={DesignTechnologies}/>

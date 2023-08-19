@@ -1,5 +1,6 @@
 import {SectionTitle} from "../components/common/SectionTitle";
 import {Footer} from "../components/common/Footer";
+import {FaDownload} from "react-icons/fa6";
 
 const noticeData = [
     {
@@ -65,7 +66,7 @@ const noticeData = [
 ];
 
 export function NoticePage() {
-    const reversedNoticeData=[...noticeData].reverse();
+    const reversedNoticeData = [...noticeData].reverse();
 
     return (
         <section className='pt-[3.5rem]'>
@@ -75,21 +76,23 @@ export function NoticePage() {
                 <table className='text-center w-full'>
                     <thead>
                     <tr className='h-[4.5rem] bg-blue-900 text-white font-raleway-500'>
-                        <th className='w-[8rem] border-t border-b border-blue-800'>Serial</th>
-                        <th className='w-[16rem] border-t border-b border-blue-800'>Title</th>
-                        <th className='w-[16rem] border-t border-b border-blue-800'>Upload Date</th>
-                        <th className='w-[8rem] border-t border-b border-blue-800'>Download</th>
+                        <th className='w-[8rem]'>Serial</th>
+                        <th className='w-[16rem]'>Title</th>
+                        <th className='w-[16rem]'>Upload Date</th>
+                        <th className='w-[2rem]'>Download</th>
                     </tr>
                     </thead>
 
                     <tbody>
                     {
                         reversedNoticeData.map((data, idx) =>
-                            <tr key={idx} className='h-[4rem] hover:bg-slate-400 transition-colors duration-300'>
+                            <tr key={idx} className='h-[3.5rem] hover:bg-slate-400 transition-colors duration-300'>
                                 <td>{data.sl}</td>
                                 <td>{data.title}</td>
                                 <td>{data.uploadDate}</td>
-                                <td><a href={data.downloadLink}>download</a></td>
+                                <td>
+                                    <a href={data.downloadLink} className='btn btn-primary btn-circle text-xl'><FaDownload/></a>
+                                </td>
                             </tr>)
                     }
                     </tbody>
