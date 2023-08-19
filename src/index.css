@@ -22,6 +22,10 @@
     .text-input-1 {
         @apply py-3 px-5 block bg-green-50 border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500;
     }
+
+    .heading-2{
+        @apply text-2xl text-center font-serif pt-4 pb-2
+    }
 }
 
 tr:nth-child(even){
