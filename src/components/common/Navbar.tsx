@@ -12,12 +12,12 @@ const nav_items = [
     {
         text: 'Architecture',
         icon: <FaLaptop/>,
-        link: 'technology',
+        link: 'architecture',
     },
     {
         text: 'Our Services',
         icon: <GrServices/>,
-        link: 'civil',
+        link: 'services',
     },
     {
         text: 'Notice',

@@ -1,10 +1,10 @@
-import {FeaturedDesigns} from "../components/civil/FeaturedDesigns/FeaturedDesigns";
+import {Services} from "../components/civil/Services";
 import {Footer} from "../components/common/Footer";
 
-export function ArchitecturePage() {
+export function ServicesPage() {
     return (
         <section className='pt-[4rem] flex flex-col space-y-10'>
-            <FeaturedDesigns/>
+            <Services/>
             <Footer/>
         </section>
     )

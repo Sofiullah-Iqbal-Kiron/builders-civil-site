@@ -1,13 +1,14 @@
 import {CivilPage} from "./pages/CivilPage";
 
 import {Navbar} from "./components/common/Navbar";
-import {ArchitecturePage} from "./pages/ArchitecturePage";
 import {CompanyPage} from "./pages/CompanyPage";
 import {SecurityPage} from "./pages/SecurityPage";
 import {NoticePage} from "./pages/NoticePage";
 import {ContactUsPage} from "./pages/ContactUsPage";
 import {LoginPage} from "./pages/LoginPage";
 import {Routes, Route} from "react-router-dom";
+import {ArchitecturePage} from "./pages/ArchitecturePage";
+import {ServicesPage} from "./pages/ServicesPage";
 
 function App() {
     return (
@@ -17,7 +18,8 @@ function App() {
             <Routes>
                 <Route path='/' element={<CivilPage/>}/>
                 <Route path='civil' element={<CivilPage/>}/>
-                <Route path='technology' element={<ArchitecturePage/>}/>
+                <Route path='architecture' element={<ArchitecturePage/>}/>
+                <Route path='services' element={<ServicesPage/>}/>
                 <Route path='company' element={<CompanyPage/>}/>
                 <Route path='security' element={<SecurityPage/>}/>
                 <Route path='notice' element={<NoticePage/>}/>
