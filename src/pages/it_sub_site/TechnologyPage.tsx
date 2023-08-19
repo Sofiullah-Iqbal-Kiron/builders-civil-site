@@ -1,5 +1,5 @@
-import {Technology} from "../components/technology/Technology";
-import {Footer} from "../components/common/Footer";
+import {Technology} from "../../components/it/technology/Technology";
+import {Footer} from "../../components/common/Footer";
 
 import {
     FaAngular,

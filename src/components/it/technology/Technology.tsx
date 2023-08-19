@@ -1,5 +1,5 @@
 import {TechnologyCard} from "./TechnologyCard";
-import {SectionTitle} from "../common/SectionTitle";
+import {SectionTitle} from "../../common/SectionTitle";
 
 interface Props {
     title: string,
