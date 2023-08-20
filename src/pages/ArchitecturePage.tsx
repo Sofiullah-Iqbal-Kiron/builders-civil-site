@@ -1,5 +1,5 @@
-import {FeaturedDesigns} from "../../components/civil/FeaturedDesigns/FeaturedDesigns";
-import {Footer} from "../../components/common/Footer";
+import {FeaturedDesigns} from "../components/FeaturedDesigns/FeaturedDesigns";
+import {Footer} from "../components/Footer";
 
 export function ArchitecturePage() {
     return (

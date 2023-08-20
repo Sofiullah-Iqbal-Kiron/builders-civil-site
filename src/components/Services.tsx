@@ -1,12 +1,12 @@
 import {ServiceLink} from "./ServiceLink";
 import {motion} from 'framer-motion';
 
-import house from '../../assets/services/house.svg';
-import office from '../../assets/services/office.svg';
-import market from '../../assets/services/market.svg';
-import mosque from '../../assets/services/mosque.svg';
-import road from '../../assets/services/road.svg';
-import bridge from '../../assets/services/bridge.svg';
+import house from '../assets/services/house.svg';
+import office from '../assets/services/office.svg';
+import market from '../assets/services/market.svg';
+import mosque from '../assets/services/mosque.svg';
+import road from '../assets/services/road.svg';
+import bridge from '../assets/services/bridge.svg';
 
 export function Services() {
     const services = [

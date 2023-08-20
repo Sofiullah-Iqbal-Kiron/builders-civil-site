@@ -1,9 +1,9 @@
 import {motion} from 'framer-motion';
 import {FeaturedDesignCard} from "./FeaturedDesignCard";
 
-import img1 from '../../../assets/featured_design/img1.jpg';
-import img2 from '../../../assets/featured_design/img2.jpg';
-import img3 from '../../../assets/featured_design/img3.jpg';
+import img1 from '../../assets/featured_design/img1.jpg';
+import img2 from '../../assets/featured_design/img2.jpg';
+import img3 from '../../assets/featured_design/img3.jpg';
 
 const items = [
     {

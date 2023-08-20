@@ -1,4 +1,4 @@
-import {SectionTitle} from "../../components/common/SectionTitle";
+import {SectionTitle} from "../components/SectionTitle";
 
 export function CompanyPage() {
     return (

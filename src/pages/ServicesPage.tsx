@@ -1,7 +1,7 @@
-import {Services} from "../../components/civil/Services";
-import {Footer} from "../../components/common/Footer";
+import {Services} from "../components/Services";
+import {Footer} from "../components/Footer";
 
-export function CivilServicesPage() {
+export function ServicesPage() {
     return (
         <section className='pt-[4rem] flex flex-col space-y-10'>
             <Services/>

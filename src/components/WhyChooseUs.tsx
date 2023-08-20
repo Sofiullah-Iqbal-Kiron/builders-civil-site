@@ -1,7 +1,7 @@
 import {motion} from 'framer-motion'
 
-import img1 from '../../assets/img-1.png'
-import img2 from '../../assets/img-2.png'
+import img1 from '../assets/img-1.png'
+import img2 from '../assets/img-2.png'
 
 export function WhyChooseUs() {
     return (

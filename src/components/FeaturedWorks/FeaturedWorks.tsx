@@ -1,9 +1,9 @@
 import {motion} from 'framer-motion'
 
-import img1 from '../../../assets/featured_work/img1.jpg';
-import img2 from '../../../assets/featured_work/img2.jpg';
-import img3 from '../../../assets/featured_work/img3.jpg';
-import img4 from '../../../assets/featured_work/img4.jpg';
+import img1 from '../../assets/featured_work/img1.jpg';
+import img2 from '../../assets/featured_work/img2.jpg';
+import img3 from '../../assets/featured_work/img3.jpg';
+import img4 from '../../assets/featured_work/img4.jpg';
 
 const navigations = [
     {

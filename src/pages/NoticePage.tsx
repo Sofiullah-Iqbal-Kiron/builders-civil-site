@@ -1,4 +1,4 @@
-import {SectionTitle} from "../../components/common/SectionTitle";
+import {SectionTitle} from "../components/SectionTitle";
 import {FaDownload} from "react-icons/fa6";
 
 const noticeData = [

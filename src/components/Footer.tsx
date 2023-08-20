@@ -2,16 +2,16 @@ import {motion} from 'framer-motion';
 
 import {FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaYoutube, FaPinterest, FaReddit} from 'react-icons/fa6'
 
-import usaflag from '../../assets/footer/USA flag.svg';
-import ukflag from '../../assets/footer/UK flag.svg';
+import usaflag from '../assets/footer/USA flag.svg';
+import ukflag from '../assets/footer/UK flag.svg';
 
-import amex from '../../assets/footer/amex.svg';
-import apple_pay from '../../assets/footer/apple-pay.svg';
-import google_pay from '../../assets/footer/google-pay.svg';
-import master_card from '../../assets/footer/master-card.svg';
-import payoneer from '../../assets/footer/payoneer.svg';
-import paypal from '../../assets/footer/paypal.svg';
-import visa_card from '../../assets/footer/visa-card.svg';
+import amex from '../assets/footer/amex.svg';
+import apple_pay from '../assets/footer/apple-pay.svg';
+import google_pay from '../assets/footer/google-pay.svg';
+import master_card from '../assets/footer/master-card.svg';
+import payoneer from '../assets/footer/payoneer.svg';
+import paypal from '../assets/footer/paypal.svg';
+import visa_card from '../assets/footer/visa-card.svg';
 
 const payment_methods = [
     {logo: amex, tooltip: 'amex'},
